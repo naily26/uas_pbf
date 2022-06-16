@@ -133,7 +133,7 @@ export default class Barang extends Component {
             isLoading: true,
         });
         axios
-            .delete("http://localhost:8000/api/Barang/" + id)
+            .delete("http://localhost:8000/api/barang_delete/" + id)
             .then((response) => {
                 this.setState({
                     isLoading: false,

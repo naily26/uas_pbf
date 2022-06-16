@@ -9,7 +9,7 @@ import {
     Label,
     Input,
 } from "reactstrap";
-export default class addBarang extends Component {
+export default class addBarangs extends Component {
     render() {
         return (
             <div>
