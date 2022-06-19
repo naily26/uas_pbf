@@ -12,17 +12,37 @@ import {
 
 export default function BasicExample() {
   return (
+    
     <Router>
-      <div>
-        <ul>
-          <li>
-            <Link to="/">Barang</Link>
+      <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
+            <div class="container text-light">
+                <div class="w-100 d-flex justify-content-between">
+                    <div>
+                        <i class="fa fa-envelope mx-2"></i>
+                        <a class="navbar-sm-brand text-light text-decoration-none" href="#">Welcome to website</a>
+                    </div>
+                    <div>
+                        {/* <button className="btn btn-success" onClick={this.handleLogout}>Logout</button> */}
+                            
+                    </div>
+                </div>
+            </div>
+            </nav>
+      <div class="  navbar-expand-lg navbar-light shadow align-self-center navbar-collapse  " id="templatemo_main_nav">
+
+<div class="flex-fill">
+    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+    <a class="navbar-brand text-success logo h2 align-self-center" href="#">
+    Camp Ground Admin
+  </a>
+          <li  class="nav-item">
+            <Link class="nav-link" to="/">Barang</Link>
           </li>
-          <li>
-            <Link to="/pengguna">User</Link>
+          <li  class="nav-item">
+            <Link class="nav-link" to="/pengguna">User</Link>
           </li>
-          <li>
-            <Link to="/peminjaman">Peminjaman</Link>
+          <li  class="nav-item">
+            <Link class="nav-link" to="/peminjaman">Peminjaman</Link>
           </li>
           
         </ul>
@@ -48,6 +68,7 @@ export default function BasicExample() {
           </Route>
           
         </Switch>
+      </div>
       </div>
     </Router>
   );

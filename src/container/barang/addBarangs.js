@@ -55,7 +55,15 @@ export default class addBarangs extends Component {
                                 onChange={this.props.onChangeAddBarangHandler}
                             />
                         </FormGroup>
-                        
+                        <FormGroup>
+                            <Label for="gambar">gambar</Label>
+                            <Input
+                                id="gambar"
+                                name="gambar"
+                                value={this.props.newBarangData.gambar}
+                                onChange={this.props.onChangeAddBarangHandler}
+                            />
+                        </FormGroup>
                     </ModalBody>
                     <ModalFooter>
                         <Button color="primary" onClick={() =>
